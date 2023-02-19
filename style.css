@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html,body{
+	height: 100%;
+}
+
+.stopwatchContainer{
+	background-image: url('./bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.timeTittle{
+	position: relative;
+	bottom: 4%;
+	color: #00CCFF;
+	font-size: 50px;
+}
+
+.stopwatchContainerBtn{
+	display: flex;
+	gap: 30px;
+	position: relative;
+	bottom: 3%;
+}
+
+.buttonStopwatch{
+	cursor: pointer;
+	width: 100px;
+	padding: 10px 5px 10px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid black;
+	color: #00CCFF;
+	font-size: 25px;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.buttonStopwatch:hover{
+	background-color: rgba(0, 0, 0, 1) ;
+
+}
+#startBtn:hover{
+	transition: 0.3s !important;
+}
+
+#saveBtn{
+	width: 360px;
+	margin: 2% 0;
+	position: relative;
+	bottom: 3%;
+}
+
+#startBtn:disabled{
+	transition: 0.7s !important;
+	opacity: 0.2;
+	cursor: initial;
+}
+
+.containerList{
+	
+	position: relative;
+	bottom: 10%;
+
+	
+}
+
+.buttonListTime{
+	cursor: pointer;
+	width: 360px;
+	padding: 10px 5px 10px 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid black;
+	color: #00CCFF;
+	font-size: 25px;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.buttonListTime:hover{
+	transition: 0.3s !important;
+	background-color: rgba(0, 0, 0, 1.0);
+}
+
+.timeList{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	z-index: 999;
+	width: 100%;
+	height: 450%;
+	flex-wrap: wrap;
+	background-color: black;
+
+}
+
+.singleTimer{
+	background-color: black;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.containerListTimer{
+	background-color: #00CCFF;
+	align-items: center;
+	color: white;
+	transition: transform 0.5s ease-in-out;
+	display: none;
+}
+
+.close{
+	cursor: pointer;
+	border: 1px solid white;
+	text-align: center;
+}
